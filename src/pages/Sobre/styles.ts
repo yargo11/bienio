@@ -1,10 +1,7 @@
 import styled from 'styled-components';
 import { shade } from 'polished';
 
-export const Size = styled.div`
-  max-width: 960px;
-  margin: auto;
-`;
+export const Size = styled.div``;
 
 export const Cover = styled.div`
   display: flex;
@@ -13,35 +10,56 @@ export const Cover = styled.div`
 `;
 
 export const HeaderBG = styled.div`
-  width: 100%;
-  background-color: lightgray;
-  height: 100px;
+  width: 90%;
+  margin: auto;
 `;
 
 export const Section = styled.section`
-  max-width: 1200px;
-  margin: auto;
-  display: block;
-  justify-content: center;
-  float: left;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #eeeeee;
+  margin: 0px 20px;
+  padding: 20px 20px;
 
   h1 {
-    font-size: 48px;
+    font-size: 2.8em;
     font-weight: bold;
+    color: #01909c;
+    margin: 35px 0px;
     text-align: center;
   }
 
-  div {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: space-between;
+  h3,
+  h4 {
+    margin: 10px 0px;
+  }
+
+  h5 {
+    margin: 3px;
   }
 `;
 
+export const Columns = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #01909c;
+  justify-content: center;
+  margin-bottom: 30px;
+`;
+
 export const Column = styled.div`
+  display: flex;
   flex-direction: column;
-  text-align: center;
+  margin: 10px 20px;
+  align-items: center;
+
+  p {
+    margin-top: 15px;
+    font-weight: bold;
+  }
 `;
 
 export const Button = styled.button`

@@ -6,7 +6,7 @@ import Sobre from '../pages/Sobre';
 
 const Routes: React.FC = () => (
   <Switch>
-    <Route path="/" exact component={Home} />
+    <Route exact path="/" component={Home} />
     <Route path="/sobre" exact component={Sobre} />
   </Switch>
 );

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Menu } from './styles';
 
 import logoTJRN from '../../assets/tjrn.png';
@@ -8,21 +9,21 @@ const Header: React.FC = () => (
     <Menu>
       <ul>
         <li>
-          <a href="teste">
+          <a href="http://tjrn.jus.br/">
             <img src={logoTJRN} alt="TJRN" />
           </a>
         </li>
         <li>
-          <a href="teste">SOBRE</a>
+          <Link to="/sobre">SOBRE</Link>
         </li>
         <li>
-          <a href="teste">ENTREVISTA</a>
+          <Link to="teste">ENTREVISTA</Link>
         </li>
         <li>
-          <a href="teste">SECRETARIAS</a>
+          <Link to="teste">SECRETARIAS</Link>
         </li>
         <li>
-          <a href="teste">VERSÃO EM PDF</a>
+          <Link to="teste">VERSÃO EM PDF</Link>
         </li>
       </ul>
       {/* <hr /> */}
