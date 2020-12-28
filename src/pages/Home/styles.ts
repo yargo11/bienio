@@ -4,6 +4,7 @@ import { shade } from 'polished';
 export const Size = styled.div`
   max-width: 960px;
   margin: auto;
+  padding: 0px 10px 10px 10px;
 `;
 
 export const Container = styled.div`
@@ -21,6 +22,17 @@ export const Container = styled.div`
     & + img {
       margin-left: -100px;
       max-height: 609px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      & + img {
+        margin-left: 0px;
+      }
     }
   }
 `;

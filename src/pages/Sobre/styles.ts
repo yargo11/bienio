@@ -7,6 +7,10 @@ export const Cover = styled.div`
   display: flex;
   justify-content: center;
   margin: 30px 0px;
+
+  img {
+    padding: 5px;
+  }
 `;
 
 export const HeaderBG = styled.div`
@@ -20,20 +24,20 @@ export const Section = styled.section`
   flex-wrap: wrap;
   align-items: center;
   background-color: #eeeeee;
-  margin: 0px 20px;
-  padding: 20px 20px;
+  margin: 10px;
+  padding: 10px 0px;
+  text-align: center;
 
   h1 {
     font-size: 2.8em;
     font-weight: bold;
     color: #01909c;
     margin: 35px 0px;
-    text-align: center;
   }
 
   h3,
   h4 {
-    margin: 10px 0px;
+    margin-top: 10px;
   }
 
   h5 {
@@ -55,10 +59,17 @@ export const Column = styled.div`
   flex-direction: column;
   margin: 10px 20px;
   align-items: center;
+  text-align: center;
 
   p {
     margin-top: 15px;
     font-weight: bold;
+  }
+
+  img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
   }
 `;
 

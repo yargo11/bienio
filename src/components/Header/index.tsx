@@ -14,7 +14,7 @@ const Header: React.FC = () => (
           </a>
         </li>
         <li>
-          <Link to="/sobre">SOBRE</Link>
+          <Link to="/bienio/sobre">SOBRE</Link>
         </li>
         <li>
           <Link to="teste">ENTREVISTA</Link>
